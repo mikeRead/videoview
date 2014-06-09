@@ -28,7 +28,7 @@
 		<config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.INTERNET" />
         </config-file>
-        <source-file src="src/android/Calendar.java" target-dir="src/org/ihopkc/videoview" />
+        <source-file src="src/android/CalendarPlugin.java" target-dir="src/org/ihopkc/videoview" />
 	</platform>
     
 </plugin>
