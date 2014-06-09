@@ -1,34 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    id="org.ihopkc.videoview"
-    version="1.0.0">
 
-    <engines>
-        <engine name="cordova" version=">=3.2.0" />
-    </engines>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="org.devgirl.calendar"
+      version="0.1.0">
+    <name>Calendar</name>
+    <description>Sample PhoneGap Calendar Plugin</description>
+    <license>MIT</license>
+    <keywords>phonegap,calendar</keywords>
 
-	<name>CalendarPlugin</name>
-	<description>Play video with native support for android</description>
-    <author>Mike Read</author>
-    <keywords>video,android</keywords>
-	<license>MIT</license>
-    
-    <js-module src="www/calendar.js" name="CalendarPlugin">
-		<clobbers target="CalendarPlugin" />
-	</js-module>
-    
+
+    <js-module src="www/calendar.js" name="Calendar">
+        <clobbers target="window.calendar" />
+    </js-module>
+
+    <!-- android -->
     <platform name="android">
-		<config-file target="res/xml/config.xml" parent="/*">
-            <feature name="CalendarPlugin" >
-                <param name="android-package" value="org.ihopkc.videoview.CalendarPlugin"/>
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Calendar">
+                <param name="android-package" value="org.devgirl.calendar.Calendar"/>
             </feature>
         </config-file>
-		
-		<config-file target="AndroidManifest.xml" parent="/*">
-            <uses-permission android:name="android.permission.INTERNET" />
-        </config-file>
-        <source-file src="src/android/CalendarPlugin.java" target-dir="src/org/ihopkc/videoview" />
-	</platform>
-    
+
+        <source-file src="src/android/Calendar.java" target-dir="src/org/devgirl/calendar" />      
+     </platform>          
 </plugin>
