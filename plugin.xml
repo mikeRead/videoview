@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="org.devgirl.calendar"
+           id="org.ihopkc.videoplayer"
       version="0.1.0">
     <name>Calendar</name>
     <description>Sample PhoneGap Calendar Plugin</description>
@@ -9,18 +9,27 @@
     <keywords>phonegap,calendar</keywords>
 
 
-    <js-module src="www/calendar.js" name="Calendar">
-        <clobbers target="window.calendar" />
+    <js-module src="www/videoplayer.js" name="videoplayer">
+        <clobbers target="play" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="Calendar">
-                <param name="android-package" value="org.devgirl.calendar.Calendar"/>
+            
+            <feature name="videoplugin">
+                <param name="android-package" value="org.ihopkc.videoplayer.videoplugin"/>
             </feature>
+
         </config-file>
 
-        <source-file src="src/android/Calendar.java" target-dir="src/org/devgirl/calendar" />      
+         <config-file target="AndroidManifest.xml" parent="/manifest/application">
+                   <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="org.ihopkc.videoplayer.play" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+                   </activity>
+        </config-file>
+
+        <source-file src="src/android/play.java" target-dir="src/org/ihopkc/videoplayer" />
+        <source-file src="src/android/videoplugin.java" target-dir="src/org/ihopkc/videoplayer" />
+        <source-file src="src/android/activity_player.xml" target-dir="res/layout" />       
      </platform>          
 </plugin>
