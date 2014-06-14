@@ -10,7 +10,7 @@
 
 
     <js-module src="www/videoplayer.js" name="videoplayer">
-        <clobbers target="play" />
+        <clobbers target="cordova.plugins.videoPlayer" />
     </js-module>
 
     <!-- android -->
@@ -20,14 +20,15 @@
             <feature name="videoplugin">
                 <param name="android-package" value="org.ihopkc.videoplayer.videoplugin"/>
             </feature>
+            
 
         </config-file>
-
+ 
          <config-file target="AndroidManifest.xml" parent="/manifest/application">
-                   <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="org.ihopkc.videoplayer.play" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+                  <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="org.ihopkc.videoplayer.play" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
                    </activity>
         </config-file>
-
+>
         <source-file src="src/android/play.java" target-dir="src/org/ihopkc/videoplayer" />
         <source-file src="src/android/videoplugin.java" target-dir="src/org/ihopkc/videoplayer" />
         <source-file src="src/android/activity_player.xml" target-dir="res/layout" />       
