@@ -12,7 +12,7 @@ Read "Important!" below VVV
 
 IMPORTANT!
 ----
-In most cases,after installing this plugin, you will need to edit line 24 of platforms/android/src/org/ihopkc/videoplayer/play.java
+In most cases,after installing this plugin, you will need to edit line 24 of platforms/android/src/org/ihopkc/videoplayer/play.java ( https://github.com/mikeRead/videoview/blob/master/src/android/play.java )
 
 Find (on line 24) 
 
