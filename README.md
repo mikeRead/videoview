@@ -18,16 +18,16 @@ Find import com.phonegap.helloworld.R; and replace with your own main package
 for example, if you ran 
 
 ```sh 
-phonegap create name com.domain.name
+phonegap create name com.example.project_name "CordovaProjectName"
 ```
-you will need to repace 
+you will need to repace (on line 24)
 ```sh 
 import com.phonegap.helloworld.R;
 ```
 with
 
 ```sh 
-import com.domain.name.R;
+import com.example.project_name.R;
 ```
 
 
