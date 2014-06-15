@@ -13,7 +13,13 @@ Read "Important!" below VVV
 IMPORTANT!
 ----
 In most cases,after installing this plugin, you will need to edit line 24 of platforms/android/src/org/ihopkc/videoplayer/play.java
-Find import com.phonegap.helloworld.R; (on line 24) and replace with your own main package
+
+Find 
+```sh 
+import com.phonegap.helloworld.R;
+```
+
+(on line 24) and replace with your own main package
 
 for example, if you ran 
 
