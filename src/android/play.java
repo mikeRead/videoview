@@ -19,6 +19,10 @@
 
 package org.ihopkc.videoplayer;
 
+//change this (com.phonegap.helloworld) to your package name, keep the .R
+//example: your.package.name.R;
+import com.phonegap.helloworld.R;
+
 import android.os.Bundle;
 import org.apache.cordova.*;
 import android.app.Activity;
