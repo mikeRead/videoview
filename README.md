@@ -26,7 +26,7 @@ for example, if you ran
 ```sh 
 phonegap create name com.example.project_name_space "CordovaProjectName"
 ```
-you will need to repace (on line 24)
+you will need to replace (on line 24)
 ```sh 
 import com.phonegap.helloworld.R;
 ```
