@@ -10,7 +10,7 @@
 
 
     <js-module src="www/videoplayer.js" name="videoplayer">
-        <clobbers target="window.play" />
+        <clobbers  target="window.play" />
     </js-module>
 
     <!-- android -->
