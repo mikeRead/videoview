@@ -23,20 +23,14 @@ package org.ihopkc.videoplayer;
 //example: your.package.name.R;
 import com.phonegap.helloworld.R;
 
+
 import android.os.Bundle;
-import org.apache.cordova.*;
 import android.app.Activity;
-import android.content.Intent;
 import android.net.Uri;
-import android.os.Bundle;
-import android.text.TextUtils;
 import android.widget.MediaController;
 import android.widget.VideoView;
-
-import android.util.Log;
-import android.view.View;
-import android.widget.EditText;
 import android.widget.Toast;
+
 
 
 /**
