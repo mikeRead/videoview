@@ -33,7 +33,7 @@ import com.phonegap.helloworld.R;
 with
 
 ```sh 
-import com.example.project_names_pace.R;
+import com.example.project_names_space.R;
 ```
 then you can run 
 ```sh 
