@@ -10,7 +10,7 @@
 
 
     <js-module src="www/videoplayer.js" name="videoplayer">
-        <clobbers target="cordova.plugins.videoPlayer" />
+        <clobbers target="window.play" />
     </js-module>
 
     <!-- android -->
@@ -28,7 +28,7 @@
                   <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="org.ihopkc.videoplayer.play" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
                    </activity>
         </config-file>
->
+
         <source-file src="src/android/play.java" target-dir="src/org/ihopkc/videoplayer" />
         <source-file src="src/android/videoplugin.java" target-dir="src/org/ihopkc/videoplayer" />
         <source-file src="src/android/activity_player.xml" target-dir="res/layout" />       
