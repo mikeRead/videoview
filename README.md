@@ -6,6 +6,7 @@ Install
 ---
 ```sh
 phonegap create videoview
+cd videoview
 phonegap plugin add https://github.com/mikeRead/videoview.git
 ```
 Read "Important!" below VVV
