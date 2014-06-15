@@ -14,17 +14,16 @@ IMPORTANT!
 ----
 In most cases,after installing this plugin, you will need to edit line 24 of platforms/android/src/org/ihopkc/videoplayer/play.java
 
-Find 
-```sh 
-import com.phonegap.helloworld.R;
-```
+Find (on line 24) 
 
-(on line 24) and replace with your own main package
+> import com.phonegap.helloworld.R;
+
+and replace with your own project name space
 
 for example, if you ran 
 
 ```sh 
-phonegap create name com.example.project_name "CordovaProjectName"
+phonegap create name com.example.project_name_space "CordovaProjectName"
 ```
 you will need to repace (on line 24)
 ```sh 
@@ -33,7 +32,7 @@ import com.phonegap.helloworld.R;
 with
 
 ```sh 
-import com.example.project_name.R;
+import com.example.project_names_pace.R;
 ```
 then you can run 
 ```sh 
